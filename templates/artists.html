@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href={{ url_for( 'static' , filename='style.css' ) }} />
+    <meta charset="UTF-8">
+
+</head>
+
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+        <a class="navbar-brand" href="#">
+            <img class='navigator' src="static/b&wBill.jpeg" width="10" height="10" alt="">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/profile">Profile<span class="sr-only"></span></a>
+                <a class="nav-item nav-link active" href="/artists">Artists</a>
+                <a class="nav-item nav-link" href="/leader_board">Leader Board</a>
+                <a class="nav-item nav-link" href="/my_leagues">My Leagues</a>
+                <a class="nav-item nav-link" href="/create_a_league">Create A League</a>
+                <a class="nav-item nav-link" href="/about_us">About Us</a>
+                <ul class="nav navbar-nav navbar-right">
+                    <a class="nav-item nav-link mr-sm-2" href="/logout">Logout</a>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <center>
+        <h1 style="font-size: 60pt; font-family: 'Staatliches', cursive; color: rgb(22, 22, 22);">Top Artists</h1>
+    </center>
+    <br>
+    <br>
+
+    <div class="container">
+
+        {% for i in range(artist_len) %}
+        <div style="font-family: 'Staatliches', cursive; color: black; font-size: 30pt;"> #{{i + 1}}.
+            <div class="card text-black"
+                style="width: 18rem; border-radius: 8%; box-shadow: 10 10px 15px 8px rgba(0,0,0,0.06);">
+                <img src="{{artists[i].artist_image}}" class="card-img-top" style="border-radius: 8%;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{artists[i].artist_name}}</h5>
+
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>

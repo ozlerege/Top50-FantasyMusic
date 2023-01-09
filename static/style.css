@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
+
+body {
+    background-color: rgb(245, 245, 245);
+    font-family: 'Garamond';
+    margin: 14px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px 10px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+}
+
+.leagues{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 45px;
+    margin-left: 55px;
+}
+
+
+.item {
+    padding: 4px;
+}
+
+img {
+    border-radius: 25px;
+    box-shadow: 10 10px 15px 8px rgba(0,0,0,0.06);
+    width: 640px;
+    height: 300px;
+    
+  }
+
+  .card {
+      color: rgb(65, 65, 255);
+  }
+
+  nav{
+    padding-left: 25px;
+    padding-right: 25 px;
+    border-radius: 25px;
+    background-color: black;
+    box-shadow: 5px 5px 8px 2px rgba(100, 100, 100, 0.8);
+    font-size: 21pt;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.navigator{
+    width: 105px;
+    height: 60px;
+  }
+
+  .navbar-right{
+    position: absolute;
+    top: 15px;
+    right: 26px;/*pixels away from the right of the navbar*/
+  }

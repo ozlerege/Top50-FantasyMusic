@@ -1,0 +1,66 @@
+.input-is-large {
+    border-radius: 15px;
+    height: 50px;
+    width: 410px;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    outline: none;
+    color: black;
+    font-size: 25px;
+    box-shadow: 0 0 5px rgba(14, 13, 13, 0.747);
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+
+}
+
+.box {
+    background-color: rgb(245, 245, 245);
+    padding: 25px;
+    border-radius: 12px;
+    height: 470px;
+    width: 500px;
+    box-shadow: 0 0 10px black;
+
+    opacity: 98%;
+
+
+}
+
+
+
+form h1 {
+    font-size: 20px;
+    color: black;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.column-is-4-is-offset-4 h3 {
+    font-size: 40px;
+    color: red;
+    margin-bottom: 5px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: inline;
+}
+
+.button-is-block-is-info-is-large-is-fullwidth {
+    border: solid 1.8px rgb(15, 15, 15);
+    border-radius: 15px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 420px;
+    color: rgb(245, 245, 245);
+    background: rgba(14, 13, 13, 0.747);
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 500;
+
+}
+
+form h2 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: inline;
+}
