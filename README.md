@@ -1,3 +1,5 @@
+# THIS IS THE DUPLICATED VERSION OF THE ORIGINAL PROJECT. PLEASE GO TO https://github.com/hhelsper/Top-50-Fantasy-League FOR ACCESSING THE ACTUAL REPOSITORY
+
 # Fantasy 50
 
 ## Link to our Webpage 
